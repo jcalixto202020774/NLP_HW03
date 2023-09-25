@@ -21,7 +21,8 @@ def transform_reviews():
         reviews = pos_content.split('\n') + neg_content.split('\n')
         
         #Writing file
-        consolidated = open(folder + '_consolidated.txt','w')
+        consolidated = open(folder + '_consolidated.csv','w')
+        consolidated.write('review,label\n')
         
         for r in reviews:
 
@@ -43,7 +44,7 @@ def transform_reviews():
                         #(replacing '_' by ' ' and multiplying it times the number of ocurrences)
                         rev += (' ' + w[0].replace('_',' '))*int(w[1])
 
-                consolidated.write(rev + ':' + label + '\n')
+                consolidated.write(rev + ',' + label + '\n')
                 
             
 transform_reviews()
