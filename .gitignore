@@ -3,14 +3,11 @@ books_consolidated.csv
 dvd_consolidated.csv
 electronics_consolidated.csv
 kitchen_consolidated.csv
-<<<<<<< HEAD
 P03_Clasificación_de_Texto.ipynb
 Tutorial-NLP_Analisis_de_Sentimientos.csv
 /20news-bydate
-=======
 
 books_test.csv
 dvd_test.csv
 electronics_test.csv
 kitchen_test.csv
->>>>>>> main
